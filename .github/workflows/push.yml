@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: igor-cotrim/database:latest
+          tags: igor-cotrim/database
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
